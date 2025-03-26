@@ -2,7 +2,7 @@
 
 ### Proje Açıklaması
 
-Bu proje, [HYPER TEKNOLOJİ](https://www.hyper.com) şirketinin frontend geliştirme görevi kapsamında oluşturulmuştur.
+Bu proje, [HYPER TEKNOLOJİ](https://www.hyperteknoloji.com.tr/) şirketinin frontend geliştirme görevi kapsamında oluşturulmuştur.
 
 
 ### Kullanılan Teknolojiler
