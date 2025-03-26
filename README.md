@@ -2,7 +2,7 @@
 
 ### ENV
 
-Projeye bir `.env` dosyası oluşturup aşağıdaki alanları eklemeniz gerekir.
+Projenin kök dizininde bir `.env` dosyası oluşturup aşağıdaki alanları eklemeniz gerekir.
 
 ```bash
 NEXT_PUBLIC_API_URL=string
@@ -11,7 +11,7 @@ NEXT_PUBLIC_TOKEN=string
 
 ### Projeyi Başlat
 
-Projenin bağımlılıkları indirin.
+Projenin bağımlılıklarını indirin.
 
 ```bash
 npm install

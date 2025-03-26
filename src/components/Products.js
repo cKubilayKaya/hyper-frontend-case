@@ -1,15 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Product from "./Product";
+import Product from "./Homepage/Product";
 import getProductsService from "@/services/getProductsService";
-
-// export async function getProductsList() {
-//   const productsList = await getProductsService();
-//   return productsList;
-// }
+import CartSkeleton from "./CartSkeleton";
 
 export default function Products() {
-  // const productsList = await getProductsList();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -27,19 +22,22 @@ export default function Products() {
     fetchProducts();
   }, []);
 
-  console.log("products", products.slice(0, 10));
-
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-24">
       <h3 className="text-3xl text-[#3A4980] font-bold mb-8">Products</h3>
       {products?.length >= 1 ? (
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
           {products.slice(0, 10).map((product) => (
             <Product product={product} key={product?.productID} />
           ))}
         </div>
       ) : (
-        <p>Loading...</p>
+        <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+          <CartSkeleton />
+          <CartSkeleton />
+          <CartSkeleton />
+          <CartSkeleton />
+        </div>
       )}
     </div>
   );
