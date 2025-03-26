@@ -1,4 +1,4 @@
-# HYPER TEKNOLOJİ – FRONTEND CASE [Canlı Link](https://hyper-frontend-case-ipw6pcyry-kubilaykayas-projects.vercel.app/)
+# HYPER TEKNOLOJİ – FRONTEND CASE [Canlı Link](https://hyper-frontend-case-eight.vercel.app/)
 
 ### Proje Açıklaması
 
