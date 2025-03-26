@@ -38,7 +38,7 @@ export default function CartProduct({ product, isFavorite = false }) {
     const foundItem = cartItems?.find((i) => i?.productID === product?.productID);
     if (foundItem) {
       dispatch(removeFromCart(product?.productID));
-      toast.success("Product removed to cart!");
+      toast.success("Product removed from cart!");
     } else {
       dispatch(addToCart(product));
       toast.success("Product added to cart!");
