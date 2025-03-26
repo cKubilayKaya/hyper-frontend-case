@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <ToastContainer
             position="top-right"
             autoClose={3000}
-            hideProgressBar={false} // Eğer progress bar hataya neden oluyorsa kaldır
+            hideProgressBar={false}
             newestOnTop
             closeOnClick
             rtl={false}

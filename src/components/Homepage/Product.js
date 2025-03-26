@@ -3,7 +3,7 @@ import { StarIcon } from "../Icons";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "@/store/slices/cartSlice";
 import { addToFavorite, removeFromFavorite } from "@/store/slices/favoriteSlice";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import Link from "next/link";
 import formatNumberWithCommas from "@/lib/formatNumberWithCommas";
 
