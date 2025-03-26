@@ -27,7 +27,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="border-b border-b-[#EDEDED] min-h-[90px] flex items-center">
+    <header className="border-b border-b-[#EDEDED] min-h-[90px] flex items-center sticky top-0 left-0 z-50 bg-white">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-bold text-[#0D3356]">
