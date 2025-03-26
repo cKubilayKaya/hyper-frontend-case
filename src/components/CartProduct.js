@@ -60,7 +60,9 @@ export default function CartProduct({ product, isFavorite = false }) {
             <Link href="/" className="text-[#667085] text-[18px] line-clamp-2 underline">
               {product?.productName}
             </Link>
-            <p className="text-[#344054] text-[18px] whitespace-nowrap">₺ {formatNumberWithCommas((product?.salePrice * product?.quantity).toFixed(2))}</p>
+            <p className="text-[#344054] text-[18px] whitespace-nowrap">
+              ₺ {formatNumberWithCommas((product?.salePrice * (product?.quantity || 1)).toFixed(2))}
+            </p>
           </div>
           <span className="text-[#98A2B3] text-sm">5 types of shoes available</span>
           <div className="mt-3">
